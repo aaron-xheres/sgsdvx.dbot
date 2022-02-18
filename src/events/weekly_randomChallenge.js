@@ -18,7 +18,7 @@ const baseURL = process.cwd();
 const trackListDbURL = `${baseURL}/${DIR_RESOURCES}/${SDVXIN.RESOURCE_BASEDIR}/${SDVXIN.TRACK_DB_FILE}`
 
 const levels = [16, 17, 18]
-const channel = client.channels.cache.get(CHANNEL.PUBLIC_ANNOUNCE);
+const channel = client.channels.cache.get(`${process.env.CHANNEL_PUBLIC_ANNOUNCE}`);
 
 
 

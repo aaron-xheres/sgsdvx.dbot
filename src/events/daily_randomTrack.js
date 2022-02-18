@@ -11,7 +11,7 @@ import cron from 'node-cron'
 import { open } from 'sqlite'
 import sqlite3 from 'sqlite3'
 
-import { CHANNEL, DIR_RESOURCES, SDVXIN, TIMEZONE } from '../constants.js';
+import { DIR_RESOURCES, SDVXIN, TIMEZONE } from '../constants.js';
 import { getRandomTrack } from "../commands/random-track.js";
 import { trackPagination } from "../handlers/paginationHandler.js";
 
@@ -19,7 +19,7 @@ const baseURL = process.cwd();
 const trackListDbURL = `${baseURL}/${DIR_RESOURCES}/${SDVXIN.RESOURCE_BASEDIR}/${SDVXIN.TRACK_DB_FILE}`
 
 const levels = [16, 17, 18]
-const channel = client.channels.cache.get(CHANNEL.PUBLIC_GENERAL);
+const channel = client.channels.cache.get(`${process.env.CHANNEL_PUBLIC_GENERAL}`);
 
 
 

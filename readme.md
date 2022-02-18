@@ -12,6 +12,17 @@ DISCORD_TOKEN = <Discord Bot Token>
 DISCORD_CLIENT = <Discord Client ID>
 DISCORD_GUILD = <Discord Guild ID>
 ```
+
+These are used specifically for the SGSDVX Group on these files
+> daily_randomTrack.js
+> weekly_randomChallenge.js
+> weekly_updateDatabase.js
+```
+CHANNEL_ADMIN_LOG = <ADMIN LOG CHANNEL ID>
+CHANNEL_PUBLIC_ANNOUNCE = <PUBLIC ANNOUNCEMENT CHANNEL ID>
+CHANNEL_PUBLIC_GENERAL = <PUBLIC GENERAL CHANNEL ID>
+```
+
 ## | Usage
 
 Use ```node .``` on project root to start the bot  

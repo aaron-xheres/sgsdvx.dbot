@@ -1,6 +1,6 @@
 /*
  * Author: Aaron Tan (aarontan.jr@gmail.com)
- * Modified: 6 Jan 2022
+ * Modified: 14 Feb 2022
  * 
  * Handlers for sdvx.in data extraction
  * Uses JSON for unstructured sdvx.in ID storage
@@ -21,8 +21,6 @@ const resourceDir = `${baseURL}/${DIR_RESOURCES}/${SDVXIN.RESOURCE_BASEDIR}`
 const trackIdListURL = `${baseURL}/${DIR_RESOURCES}/${SDVXIN.RESOURCE_BASEDIR}/${SDVXIN.TRACK_ID_LIST_FILE}`
 const updateIdListURL = `${baseURL}/${DIR_RESOURCES}/${SDVXIN.RESOURCE_BASEDIR}/${SDVXIN.UPDATE_ID_LIST_FILE}`
 const trackListDbURL = `${baseURL}/${DIR_RESOURCES}/${SDVXIN.RESOURCE_BASEDIR}/${SDVXIN.TRACK_DB_FILE}`
-
-
 
 /**
  * =-=-=-=-=-=-=-=-=-=-=
@@ -118,7 +116,6 @@ export async function updateTrackIdList() {
 
     // Update tracks into Database
     await updateTrackDB();
-
 }
 
 
