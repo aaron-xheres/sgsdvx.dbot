@@ -15,7 +15,7 @@ DISCORD_GUILD = <Discord Guild ID>
 ## | Usage
 
 Use ```node .``` on project root to start the bot  
-``` ```  
+ 
 ## | Database
 
 Track Database is populated by extracting information from [sdvx.in](https://sdvx.in/) 
