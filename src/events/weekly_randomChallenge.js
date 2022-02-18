@@ -11,7 +11,7 @@ import cron from 'node-cron'
 import { open } from 'sqlite'
 import sqlite3 from 'sqlite3'
 
-import { CHANNEL, DIR_RESOURCES, SDVXIN, TIMEZONE } from '../constants.js';
+import { DIR_RESOURCES, SDVXIN, TIMEZONE } from '../constants.js';
 import { Track } from "../classes/track.js";
 
 const baseURL = process.cwd();
