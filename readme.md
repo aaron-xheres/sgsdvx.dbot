@@ -5,7 +5,7 @@ A Nodejs Sound Voltex Bot for Discord
 
 ## | User Enviornment File (.env)
 
-For security purposes, ```.env``` is not included in the repository and must be created by the user.  
+For security purposes, ```.env``` is not included in the repository and must be created by the user in ```src/```.  
 Include the following environmental variable to start using
 ```
 DISCORD_TOKEN = <Discord Bot Token>
