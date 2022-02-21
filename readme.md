@@ -1,4 +1,4 @@
-# sound-voltex.bot
+# sgsdvx.dbot
 A Nodejs Sound Voltex Bot for Discord
 
 ---
