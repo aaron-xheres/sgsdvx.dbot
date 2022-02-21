@@ -5,6 +5,7 @@ A Nodejs Sound Voltex Bot for Discord
 
 ## | Todo
 
+```
 [] Fix broken BPM on update process
 [] OCR for score tracking
 -- [] Score Recognition
@@ -12,6 +13,7 @@ A Nodejs Sound Voltex Bot for Discord
 -- [] Track Recognition
 -- [] Difficulty Recognition
 -- [] Name Recognition
+```
 
 ## | User Enviornment File (.env)
 
