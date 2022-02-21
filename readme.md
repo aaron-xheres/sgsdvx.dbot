@@ -14,9 +14,7 @@ DISCORD_GUILD = <Discord Guild ID>
 ```
 
 These are used specifically for the SGSDVX Group on these files
-> daily_randomTrack.js
-> weekly_randomChallenge.js
-> weekly_updateDatabase.js
+```daily_randomTrack.js``` ```weekly_randomChallenge.js``` ```weekly_updateDatabase.js```
 ```
 CHANNEL_ADMIN_LOG = <ADMIN LOG CHANNEL ID>
 CHANNEL_PUBLIC_ANNOUNCE = <PUBLIC ANNOUNCEMENT CHANNEL ID>
