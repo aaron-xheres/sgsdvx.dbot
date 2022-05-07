@@ -1,8 +1,7 @@
 /*
  * Author: Aaron Tan (aarontan.jr@gmail.com)
- * Modified: 6 Jan 2022
  * 
- * /find-tracks title? artist? effector?
+ * /find-tracks title? artist? effector? version?
  */
 
 import { SlashCommandBuilder } from "@discordjs/builders";

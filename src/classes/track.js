@@ -1,12 +1,10 @@
 /*
  * Author: Aaron Tan (aarontan.jr@gmail.com)
- * Modified: 28 Dec 2021
  * 
  * Track Class
  */
 
 import { MessageEmbed } from "discord.js";
-
 
 
 export class Track {
@@ -24,25 +22,23 @@ export class Track {
     get jacketURL() { return this._jacketURL; }
 
 
-
     /**
      * Track Object
      * @param {Object} Track Properties
      */
     constructor({id, level, difficulty, title, artist, bpm, effector, illustrator, version, trackURL, jacketURL} = {}) {
-        this._id = id;
-        this._level = level;
-        this._difficulty = difficulty;
-        this._title = title;
-        this._artist = artist;
-        this._bpm = bpm;
-        this._effector = effector;
-        this._illustrator = illustrator;
-        this._version = version;
-        this._trackURL = trackURL;
-        this._jacketURL = jacketURL;
+        this._id = id ?? '-';
+        this._level = level ?? '-';
+        this._difficulty = difficulty ?? '-';
+        this._title = title ?? '-';
+        this._artist = artist ?? '-';
+        this._bpm = bpm ?? '-';
+        this._effector = effector ?? '-';
+        this._illustrator = illustrator ?? '-';
+        this._version = version ?? '-';
+        this._trackURL = trackURL ?? '-';
+        this._jacketURL = jacketURL ?? '-';
     }
-
 
 
     /**
@@ -67,7 +63,6 @@ export class Track {
     }
 
 
-
     static generateTrackFromDatabase(track) {
 
         const trackObj = new Track({
@@ -89,7 +84,6 @@ export class Track {
     }
 
 
-
     /**
      * Converts JSON data from database to String
      * @param {String} _value 
@@ -100,7 +94,6 @@ export class Track {
     }
 
     
-
     /**
      * [PRIVATE] Resolve Color based on track difficulty
      * @param {String} _diff 3 Char Difficulty

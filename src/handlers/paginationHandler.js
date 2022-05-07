@@ -1,12 +1,11 @@
 /*
  * Author: Aaron Tan (aarontan.jr@gmail.com)
- * Modified: 06 Jan 2022
+ *
  * Pagination Handler
  */
 
 import { Interaction, MessageActionRow, MessageButton, Message, MessageEmbed, MessageSelectMenu } from 'discord.js'
 import { Track } from '../classes/track.js';
-
 
 
 /**
@@ -46,14 +45,14 @@ export async function trackPagination(interaction, tracks, timeout = 15000) {
     };
 
     let curPage;
-    try {
+    if(interaction.editReply) {
         curPage = await interaction.editReply({
             embeds: [pages[page]],
             components: [actionRow],
             fetchReply: true
         });
     }
-    catch {
+    else if(interaction.edit) {
         curPage = await interaction.edit({
             embeds: [pages[page]],
             components: [actionRow],
@@ -121,7 +120,6 @@ export async function trackPagination(interaction, tracks, timeout = 15000) {
 
     return curPage;
 };
-
 
 
 /**

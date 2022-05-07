@@ -1,6 +1,5 @@
 /*
  * Author: Aaron Tan (aarontan.jr@gmail.com)
- * Modified: 6 Jan 2022
  */
 
 export const DIR_RESOURCES = 'resources'

@@ -1,11 +1,10 @@
 /*
  * Author: Aaron Tan (aarontan.jr@gmail.com)
- * Modified: 28 Dec 2021
+
  * File Handling using async fs
  */
 
 import { promises as fs } from 'fs'
-
 
 
 /**
@@ -16,7 +15,6 @@ import { promises as fs } from 'fs'
 export async function readFile(_file) { return fs.readFile(_file) }
 
 
-
 /**
  * Reads path and return array of file names
  * @param {String} _path 
@@ -25,14 +23,12 @@ export async function readFile(_file) { return fs.readFile(_file) }
 export async function readDir(_path) { return fs.readdir(_path) }
 
 
-
 /**
  * Write data to file
  * @param {String} _file File URL
  * @param {String} _data Data to be written to file
  */
 export async function writeFile(_file, _data) { fs.writeFile(_file, _data, 'utf-8')}
-
 
 
 /**

@@ -1,6 +1,5 @@
 /*
  * Author: Aaron Tan (aarontan.jr@gmail.com)
- * Modified: 07 Jan 2022
  * 
  * Daily random song
  */

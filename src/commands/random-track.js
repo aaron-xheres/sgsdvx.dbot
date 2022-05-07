@@ -1,6 +1,5 @@
 /*
  * Author: Aaron Tan (aarontan.jr@gmail.com)
- * Modified: 09 Jan 2022
  * 
  * /random-track (level)
  */

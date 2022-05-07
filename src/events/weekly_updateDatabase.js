@@ -1,6 +1,5 @@
 /*
  * Author: Aaron Tan (aarontan.jr@gmail.com)
- * Modified: 09 Jan 2022
  * 
  * Weekly Database Update
  */
@@ -13,6 +12,8 @@ import { TIMEZONE } from '../constants.js'
 
 // Administration Log Channel for updates
 const channel = client.channels.cache.get(`${process.env.CHANNEL_ADMIN_LOG}`);
+
+
 
 export default function weeklyUpdateDatabase() {
     // Scheduled Update at every Sunday 00:00

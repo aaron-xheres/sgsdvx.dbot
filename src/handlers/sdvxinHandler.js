@@ -1,6 +1,5 @@
 /*
  * Author: Aaron Tan (aarontan.jr@gmail.com)
- * Modified: 14 Feb 2022
  * 
  * Handlers for sdvx.in data extraction
  * Uses JSON for unstructured sdvx.in ID storage
