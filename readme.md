@@ -1,7 +1,19 @@
-# sound-voltex.bot
+# sgsdvx.dbot
 A Nodejs Sound Voltex Bot for Discord
 
 ---
+
+## | Todo
+
+```
+[] Fix broken BPM on update process
+[] OCR for score tracking
+-- [] Score Recognition
+-- [] EX Score Recognition (and handling lack thereof)
+-- [] Track Recognition
+-- [] Difficulty Recognition
+-- [] Name Recognition
+```
 
 ## | User Enviornment File (.env)
 
@@ -14,9 +26,7 @@ DISCORD_GUILD = <Discord Guild ID>
 ```
 
 These are used specifically for the SGSDVX Group on these files
-> daily_randomTrack.js
-> weekly_randomChallenge.js
-> weekly_updateDatabase.js
+```daily_randomTrack.js``` ```weekly_randomChallenge.js``` ```weekly_updateDatabase.js```
 ```
 CHANNEL_ADMIN_LOG = <ADMIN LOG CHANNEL ID>
 CHANNEL_PUBLIC_ANNOUNCE = <PUBLIC ANNOUNCEMENT CHANNEL ID>
@@ -29,7 +39,11 @@ Use ```node .``` on project root to start the bot
  
 ## | Database
 
+Database is SQLite3
+
 Track Database is populated by extracting information from [sdvx.in](https://sdvx.in/) 
+
+Generated database might have missing BPM if none of the difficulty is being noted/charted down. Manual edit might be required as the BPM is likely to not update due to the updating process checking only track IDs
 
 ### Updating Database
 
